@@ -10,11 +10,11 @@ const products=[
  {id:9,name:"Gamepass ADVANCE PAINT/ WARNA",price:10000,image:"assets/products/CAT.png",desc:"Gamepass untuk fitur ADVANCE PAINT/ WARNA di game kamu."},
  {id:10,name:"Gamepass SUSPENSI",price:5000,image:"assets/products/PRO SUSPENSI.png",desc:"Gamepass untuk fitur SUSPENSI di game kamu."},
  {id:11,name:"Gamepass RADIO",price:5000,image:"assets/products/RADIO BOOMBOX.png",desc:"Gamepass untuk fitur RADIO di game kamu."},
- {id:12,name:"DUIT DDS 10JT",price:5000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 10JT di game kamu."},
- {id:13,name:"DUIT DDS 50JT",price:5000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 50JT di game kamu."},
- {id:14,name:"DUIT DDS 100JT",price:5000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 100JT di game kamu."},
- {id:15,name:"DUIT DDS 500JT",price:5000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 500JT di game kamu."},
- {id:16,name:"DUIT DDS 1 MILYAR",price:5000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 1 MILYAR di game kamu."}
+ {id:12,name:"DUIT DDS 10.000.000",price:5000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 10JT di game kamu."},
+ {id:13,name:"DUIT DDS 50.000.000",price:8000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 50JT di game kamu."},
+ {id:14,name:"DUIT DDS 100.000.000",price:15000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 100JT di game kamu."},
+ {id:15,name:"DUIT DDS 500.000.000",price:55000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 500JT di game kamu."},
+ {id:16,name:"DUIT DDS 1.000.000.000",price:110000,image:"assets/products/DUIT.png",desc:"Gamepass untuk fitur DUIT DDS 1M di game kamu."}
 
 ];
 let cart=[];
