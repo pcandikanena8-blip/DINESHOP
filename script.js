@@ -61,7 +61,7 @@ function updatePaymentInfo(){
  qrisBox.classList.remove("hidden");
  qrisBox.innerHTML=`
   <div class="qris-card">
-    <img src="${makeQrisSvgDataUrl()}" alt="QRIS admin DINE SHOP">
+    <img src="assets/products/QRIS.jpg" alt="QRIS admin DINE SHOP">
     <p>Scan QRIS admin di bawah ini, lalu upload bukti pembayaran setelah transfer berhasil.</p>
   </div>
  `;
