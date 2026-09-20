@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toko Contoh · Pembayaran</title>
+  <meta name="description" content="Pilih paket dan bayar dengan aman lewat DOKU.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="/">Toko Contoh</a>
+    <span id="env-badge" class="badge" title="Mode sandbox: tidak ada uang asli yang berpindah" hidden>Mode uji coba</span>
+  </header>
+
+  <main class="layout">
+    <section aria-labelledby="catalog-title">
+      <h1 id="catalog-title">Pilih paket Anda</h1>
+      <p class="lead">Pembayaran diproses oleh DOKU. Metode yang tampil (QRIS, transfer bank, e-wallet, kartu) mengikuti channel yang aktif di akun DOKU Anda.</p>
+
+      <fieldset class="products" id="products">
+        <legend class="sr-only">Daftar paket</legend>
+        <p id="products-loading">Memuat paket…</p>
+      </fieldset>
+    </section>
+
+    <aside class="slip-wrap" aria-labelledby="slip-title">
+      <form id="order-form" class="receipt" novalidate>
+        <h2 id="slip-title">Ringkasan pesanan</h2>
+
+        <div class="line-item">
+          <span id="sum-name">Belum ada paket dipilih</span>
+          <span id="sum-price" class="muted"></span>
+        </div>
+
+        <div class="qty">
+          <span id="qty-label">Jumlah</span>
+          <div class="stepper" role="group" aria-labelledby="qty-label">
+            <button type="button" id="qty-minus" aria-label="Kurangi jumlah">−</button>
+            <output id="qty-value" aria-live="polite">1</output>
+            <button type="button" id="qty-plus" aria-label="Tambah jumlah">+</button>
+          </div>
+        </div>
+
+        <hr class="rule">
+        <div class="total">
+          <span>Total</span>
+          <span class="amount" id="total">Rp 0</span>
+        </div>
+
+        <div class="field">
+          <label for="name">Nama lengkap</label>
+          <input id="name" name="name" autocomplete="name" required minlength="2" maxlength="100">
+        </div>
+        <div class="field">
+          <label for="phone">Nomor WhatsApp</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0812 3456 7890" required>
+        </div>
+        <div class="field">
+          <label for="email">Email <span class="hint">(opsional)</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="128">
+        </div>
+
+        <p id="form-error" class="error" role="alert" hidden></p>
+
+        <button id="pay-btn" class="btn" type="submit">Bayar sekarang</button>
+        <p class="secure">Anda akan diarahkan ke halaman pembayaran resmi DOKU.</p>
+      </form>
+    </aside>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

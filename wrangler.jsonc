@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "toko-doku",
+  "main": "src/index.js",
+  "compatibility_date": "2025-09-01",
+
+  // Folder website (HTML/CSS/JS) yang disajikan Cloudflare
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+
+  // Pengaturan yang BUKAN rahasia. Kunci rahasia DOKU tidak boleh ditaruh di sini.
+  "vars": {
+    // "sandbox" = uji coba. Ganti ke "production" hanya saat siap menerima uang asli.
+    "DOKU_ENV": "sandbox",
+
+    // Batas waktu bayar dalam menit
+    "PAYMENT_DUE_MINUTES": "60",
+
+    // Kosongkan = tampilkan semua channel yang aktif di akun DOKU.
+    // Contoh membatasi: "QRIS,VIRTUAL_ACCOUNT_BCA,VIRTUAL_ACCOUNT_BRI"
+    "DOKU_PAYMENT_METHODS": ""
+
+    // Opsional, isi kalau sudah punya domain sendiri:
+    // "SITE_URL": "https://tokoanda.com"
+  }
+
+  // Opsional: penyimpanan pesanan (lihat PANDUAN.md bagian "Menyimpan pesanan")
+  // "kv_namespaces": [{ "binding": "ORDERS", "id": "ISI_ID_KV_ANDA" }]
+}
